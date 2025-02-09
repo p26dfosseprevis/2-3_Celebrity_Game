@@ -6,12 +6,19 @@ class Player {
     {
         myName = name;
     }
-    
+    public String getName(){return myName;}
+    public int getPoints(){
+        return myPoints;
+    }
     public void win(){
         myPoints++;
     }
     public void reset(){
         myPoints = 0;
+    }
+
+    public boolean equals(Player p2){
+        return myName.equals(p2.getName());
     }
 }
 
